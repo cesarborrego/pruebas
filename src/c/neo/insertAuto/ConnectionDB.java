@@ -1,4 +1,4 @@
-package c.neo.auto;
+package c.neo.insertAuto;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

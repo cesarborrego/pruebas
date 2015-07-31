@@ -1,4 +1,4 @@
-package c.neo.auto;
+package c.neo.insertAuto;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -34,5 +34,13 @@ public class sqlQuery {
     	}catch (SQLException E){
     	}
     	return data;
+    }
+    
+    public void insertaFecha(String cad_sql){
+    	try{
+    		sentencia=conexion.createStatement();
+    		resultado = sentencia.executeQuery(cad_sql);
+    	}catch (SQLException E){
+    	}
     }
 }
